@@ -1,0 +1,10 @@
+<div>
+    <h2>Apply for Leave</h2>
+    <form (ngSubmit)="applyForLeave()">
+      
+      <input type="text" [(ngModel)]="leaveRequest.employeeId" name="employeeId" placeholder="Employee ID" required>
+      <input type="text" [(ngModel)]="leaveRequest.reason" name="reason" placeholder="Reason for leave" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,11 @@
+<div>
+    <h2>Manager Approval</h2>
+    <p>Approve or reject leave requests </p>
+    <div>
+      <p>Leave Request ID: <input type="text" [(ngModel)]="leaveRequestId"></p>
+      <button (click)="approveLeaveRequest(true, false)">Approve as Manager 1</button>
+      <button (click)="approveLeaveRequest(false, true)">Approve as Manager 2</button>
+      <button (click)="rejectLeaveRequest()">Reject</button>
+    </div>
+  </div>
+  
